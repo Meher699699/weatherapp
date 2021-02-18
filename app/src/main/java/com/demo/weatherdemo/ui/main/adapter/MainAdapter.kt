@@ -14,7 +14,7 @@ import kotlin.math.roundToInt
 
 class MainAdapter(private val users: ArrayList<ListData>, var context: Context,onclick:OnClick) : RecyclerView.Adapter<MainAdapter.DataViewHolder>() {
 
-    private lateinit var onclick: OnClick
+    private  var onclick: OnClick
     init {
         this.onclick=onclick
     }
@@ -27,7 +27,7 @@ class MainAdapter(private val users: ArrayList<ListData>, var context: Context,o
             val container: LinearLayout = itemView.findViewById(R.id.container)
             tempTxt.text = "Temp:"+user.main.temp.roundToInt().toString()
             cloudy.text = "Temp:"+user.main.temp_max.roundToInt().toString()
-            rain.text = "Temp:"+user.main.humidity.toString()
+            rain.text = "Temp:"+user.main.temp_min.roundToInt().toString()
 
             container.setOnClickListener {
                 onclick.onClick(context,user)
