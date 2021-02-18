@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    tools:context=".ui.main.view.ViewActivity">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:text="75"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="80sp"
+        android:gravity="center"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/feelLike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:text="Feels Like:40"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:layout_marginRight="30dp"
+        android:gravity="right"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/clouds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        android:text="Clouds"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:gravity="left"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cloudType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Feels Like:40"
+        android:textAllCaps="true"
+        style="@style/CardView.Dark"
+        android:textSize="14sp"
+        android:layout_marginStart="20dp"
+        android:gravity="left"/>
+
+</LinearLayout>
